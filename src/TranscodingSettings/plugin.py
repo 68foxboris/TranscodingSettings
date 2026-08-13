@@ -95,10 +95,10 @@ class TranscodingSettingsSetup(Setup):
 		self.session.openWithCallback(
 			self.presetSelected,
 			ChoiceBox,
-			text=_("Select a preset for Encoder %d. The values are adapted to this device.") % index,
-			choiceList=choices,
+			title=_("Select a preset for Encoder %d. The values are adapted to this device.") % index,
+			list=choices,
 			selection=selection,
-			buttonList=[],
+			keys=[],
 			windowTitle=_("Encoder Presets"),
 		)
 
